@@ -1,0 +1,14 @@
+P:\Clase\Programación (PROG)\Ejercicios\Tema 9\WPF_Tema9Ejercicio27\WPF_Tema9Ejercicio27\bin\Debug\WPF_Tema9Ejercicio27.exe.config
+P:\Clase\Programación (PROG)\Ejercicios\Tema 9\WPF_Tema9Ejercicio27\WPF_Tema9Ejercicio27\bin\Debug\WPF_Tema9Ejercicio27.exe
+P:\Clase\Programación (PROG)\Ejercicios\Tema 9\WPF_Tema9Ejercicio27\WPF_Tema9Ejercicio27\bin\Debug\WPF_Tema9Ejercicio27.pdb
+P:\Clase\Programación (PROG)\Ejercicios\Tema 9\WPF_Tema9Ejercicio27\WPF_Tema9Ejercicio27\obj\Debug\WPF_Tema9Ejercicio27.csprojResolveAssemblyReference.cache
+P:\Clase\Programación (PROG)\Ejercicios\Tema 9\WPF_Tema9Ejercicio27\WPF_Tema9Ejercicio27\obj\Debug\MainWindow.baml
+P:\Clase\Programación (PROG)\Ejercicios\Tema 9\WPF_Tema9Ejercicio27\WPF_Tema9Ejercicio27\obj\Debug\MainWindow.g.cs
+P:\Clase\Programación (PROG)\Ejercicios\Tema 9\WPF_Tema9Ejercicio27\WPF_Tema9Ejercicio27\obj\Debug\App.g.cs
+P:\Clase\Programación (PROG)\Ejercicios\Tema 9\WPF_Tema9Ejercicio27\WPF_Tema9Ejercicio27\obj\Debug\WPF_Tema9Ejercicio27_MarkupCompile.cache
+P:\Clase\Programación (PROG)\Ejercicios\Tema 9\WPF_Tema9Ejercicio27\WPF_Tema9Ejercicio27\obj\Debug\WPF_Tema9Ejercicio27.g.resources
+P:\Clase\Programación (PROG)\Ejercicios\Tema 9\WPF_Tema9Ejercicio27\WPF_Tema9Ejercicio27\obj\Debug\WPF_Tema9Ejercicio27.Properties.Resources.resources
+P:\Clase\Programación (PROG)\Ejercicios\Tema 9\WPF_Tema9Ejercicio27\WPF_Tema9Ejercicio27\obj\Debug\WPF_Tema9Ejercicio27.csproj.GenerateResource.Cache
+P:\Clase\Programación (PROG)\Ejercicios\Tema 9\WPF_Tema9Ejercicio27\WPF_Tema9Ejercicio27\obj\Debug\WPF_Tema9Ejercicio27.exe
+P:\Clase\Programación (PROG)\Ejercicios\Tema 9\WPF_Tema9Ejercicio27\WPF_Tema9Ejercicio27\obj\Debug\WPF_Tema9Ejercicio27.pdb
+P:\Clase\Programación (PROG)\Ejercicios\Tema 9\WPF_Tema9Ejercicio27\WPF_Tema9Ejercicio27\obj\Debug\WPF_Tema9Ejercicio27.csproj.CoreCompileInputs.cache

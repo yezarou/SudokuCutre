@@ -1,0 +1,113 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows;
+using System.Windows.Controls;
+using System.Windows.Data;
+using System.Windows.Documents;
+using System.Windows.Input;
+using System.Windows.Media;
+using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
+using System.Windows.Shapes;
+
+namespace WPF_Tema9Ejercicio27
+{
+    /// <summary>
+    /// Lógica de interacción para MainWindow.xaml
+    /// </summary>
+    public partial class MainWindow : Window
+    {
+        List<List<string>> tablero = new List<List<string>> {
+            //new List<string>{ "1","2","3","4","5","6","7","8","9" },
+            //new List<string>{ "1","2","3","4","5","6","7","8","9" },
+            //new List<string>{ "1","2","3","4","5","6","7","8","9" },
+            //new List<string>{ "1","2","3","4","5","6","7","8","9" },
+            //new List<string>{ "1","2","3","4","5","6","7","8","9" },
+            //new List<string>{ "1","2","3","4","5","6","7","8","9" },
+            //new List<string>{ "1","2","3","4","5","6","7","8","9" },
+            //new List<string>{ "1","2","3","4","5","6","7","8","9" },
+            //new List<string>{ "1","2","3","4","5","6","7","8","9" }
+            new List<string>{ "","","","","","","","","" },
+            new List<string>{ "","","","","","","","","" },
+            new List<string>{ "","","","","","","","","" },
+            new List<string>{ "","","","","","","","","" },
+            new List<string>{ "","","","","","","","","" },
+            new List<string>{ "","","","","","","","","" },
+            new List<string>{ "","","","","","","","","" },
+            new List<string>{ "","","","","","","","","" },
+            new List<string>{ "","","","","","","","","" }
+        };
+
+        public MainWindow()
+        {
+            InitializeComponent();
+            for (int i = 0; i < grdCuadricula.RowDefinitions.Count; i++)
+                for (int j = 0; j < grdCuadricula.ColumnDefinitions.Count; j++)
+                {
+                    TextBox txt = new TextBox();
+                    txt.Text = tablero[i][j];
+                    txt.Margin = new Thickness(1);
+                    txt.FontSize = 20;
+                    txt.FontWeight = FontWeights.Bold;
+                    txt.MaxLength = 1;
+                    txt.VerticalContentAlignment = VerticalAlignment.Center;
+                    txt.HorizontalContentAlignment = HorizontalAlignment.Center;
+                    txt.TextChanged += Txt_TextChanged;
+                    grdCuadricula.Children.Add(txt);
+                    Grid.SetRow(txt, i);
+                    Grid.SetColumn(txt, j);
+                }
+
+            
+        }
+
+        private void Txt_TextChanged(object sender, TextChangedEventArgs e) {
+            TextBox txt = (TextBox)sender;
+            int fila = Grid.GetRow(txt);
+            int columna = Grid.GetColumn(txt);
+
+            prueba.Content = "";
+
+            tablero[fila][columna] = txt.Text;
+            ComprobarFilaColumna(fila, columna);
+            //ComprobarCuadrante(fila, columna);
+            txt.Text = tablero[fila][columna];
+
+
+            foreach (List<string> linea in tablero) {
+                foreach (string celda in linea) {
+                    if (celda == "")
+                        prueba.Content = " ";
+                    prueba.Content += celda;
+                }
+                prueba.Content += "\n";
+            }
+        }
+
+        private void ComprobarCuadrante(int fila, int columna) {
+            int filaCuadrante = fila / 3;
+            int columnaCuadrante = columna / 3;
+            for (int i = 3 * filaCuadrante; i < 3 * (1 + filaCuadrante); i++)
+                for (int j = 3 * columnaCuadrante; j < 3 * (1 + columnaCuadrante); j++)
+                    if (tablero[i][j] == tablero[fila][columna] && (i != columna || j != fila))
+                        tablero[fila][columna] = "";
+        }
+
+        private void ComprobarFilaColumna(int fila, int columna) {
+            int contador = 0;
+            while (contador < 9 && tablero[fila][columna] != null) {
+                if (fila != contador && columna != contador)
+                    if (tablero[fila][contador] == tablero[fila][columna] || tablero[contador][columna] == tablero[fila][columna])
+                        tablero[fila][columna] = "";
+                contador++;
+            }
+        }
+
+        private void brnComprobar_Click(object sender, RoutedEventArgs e) {
+
+        }
+    }
+}
